@@ -1,0 +1,311 @@
+@import "./vars";
+@import "./mixin";
+@import "./fonts";
+@import "./basestyles";
+
+.header {
+  @include tablet {
+    padding-top: 20px;
+    box-sizing: border-box;
+    height: 80px;
+  }
+  & a {
+    display: flex;
+  }
+
+  background-color: $dark-gray;
+  height: 160px;
+  font-family: "Jost";
+  font-weight: 400;
+  font-size: 15px;
+  color: $white;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    & .header__search {
+      display: block;
+      @include tablet {
+        display: none;
+      }
+
+      &-tablet {
+        display: none;
+        @include tablet {
+          display: block;
+        }
+        @include phone {
+          display: none;
+        }
+      }
+    }
+    @include tablet {
+      align-items: center;
+    }
+
+    &_line {
+      width: 100%;
+      margin-top: 11px;
+      margin-bottom: 13px;
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+
+  &__contact {
+    width: 373px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: column;
+
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 156px;
+      &--hover:hover {
+        color: $gold;
+        transition: 0.1s ease-in-out;
+        cursor: pointer;
+      }
+    }
+
+    &_icon {
+      background-image: url(/build/img/whatsapp.png);
+      width: 18px;
+      height: 18px;
+      background-size: contain;
+      margin-right: 14px;
+    }
+    &_main {
+      font-size: 15px;
+    }
+    &_text {
+      font-size: 12px;
+      &:hover {
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__email {
+    display: flex;
+    justify-content: space-between;
+    width: 161px;
+    &:hover {
+      color: $gold;
+      transition: 0.1s ease-in-out;
+      cursor: pointer;
+    }
+
+    &_icon {
+      background-image: url(/build/img/mail.svg);
+      width: 25px;
+      height: 25px;
+      background-size: contain;
+      margin-right: 14px;
+    }
+    &_main {
+      font-size: 15px;
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 183px;
+    color: $gold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 14px;
+    @include tablet {
+      display: none;
+    }
+
+    &:hover &_line {
+      width: 125px;
+      transition: 0.5s ease-in-out;
+    }
+
+    &_name {
+      font-family: "Forum";
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 39px;
+    }
+    &_line {
+      width: 100%;
+      margin-bottom: 3px;
+      -webkit-transition: 0.5s ease;
+    }
+    &_about {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: 0.25em;
+    }
+  }
+  &__user {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+    transition: 0.5s ease;
+    &_cart:hover {
+      opacity: 0.7;
+      transition: 0.5s ease;
+    }
+    @include tablet {
+      margin-top: 0;
+    }
+    @include phone {
+      justify-content: flex-end;
+      margin-right: 20px;
+    }
+
+    &__purchase {
+      display: flex;
+    }
+
+    &_price {
+      font-size: 15px;
+      margin-right: 10px;
+    }
+
+    &_cart {
+      position: relative;
+
+      &-icon {
+        background-image: url(/build/img/cart.svg);
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+      }
+      &-count {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        background-color: $gold;
+        color: $white;
+        text-align: center;
+        line-height: 24px;
+        left: 14px;
+        bottom: 29px;
+        @include tablet {
+          bottom: 13px;
+        }
+      }
+    }
+    &_favourite {
+      background-image: url(/build/img/heart.svg);
+      width: 20px;
+      height: 18px;
+      background-size: contain;
+      transition: 0.5s ease;
+      &:hover {
+        opacity: 0.7;
+        transition: 0.5s ease;
+      }
+      @include phone {
+        display: none;
+      }
+    }
+    &_account {
+      background-image: url(/build/img/user.svg);
+      width: 18px;
+      height: 18px;
+      background-size: contain;
+      transition: 0.5s ease;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.7;
+        transition: 0.5s ease;
+      }
+      @include phone {
+        display: none;
+      }
+    }
+  }
+
+  &__bot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__menu {
+    display: none;
+    align-items: center;
+    cursor: pointer;
+    z-index: 101;
+    &-text {
+      font-size: 25px;
+      line-height: 35px;
+      margin-right: 10px;
+      transition: 0.5s ease-in-out;
+    }
+    &-btn {
+      background-image: url(/build/img/catalog-btn.svg);
+      width: 24px;
+      height: 14px;
+      background-size: contain;
+      margin-top: 4px;
+      background-repeat: no-repeat;
+      transition: 0.5s ease-in-out;
+    }
+    @include tablet {
+      display: flex;
+    }
+  }
+
+  &__catalog {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 100;
+
+    &-text {
+      font-size: 25px;
+      line-height: 35px;
+      margin-right: 10px;
+      transition: 0.5s ease-in-out;
+    }
+    &-btn {
+      background-image: url(/build/img/catalog-btn.svg);
+      width: 24px;
+      height: 14px;
+      background-size: contain;
+      margin-top: 4px;
+      background-repeat: no-repeat;
+      transition: 0.5s ease-in-out;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+
+    &_span:hover &_span::after {
+      content: "DFD";
+      color: white;
+    }
+  }
+}

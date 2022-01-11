@@ -1,0 +1,200 @@
+@import "./vars";
+@import "./mixin";
+@import "./fonts";
+@import "./basestyles";
+
+.mainshop {
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  & .container {
+    position: relative;
+    & .slider__indicators {
+      top: auto;
+      bottom: -28px;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 172px;
+      display: none;
+      left: 39%;
+      @include tablet {
+        display: flex;
+      }
+    }
+    & .shop_showMore {
+      display: block;
+      width: 180px;
+    }
+    @include phone {
+      & .shop__card-box {
+        flex-direction: column;
+        height: auto;
+        & .card {
+          display: flex;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    font-family: "Jost";
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: $gray;
+
+    &-li {
+      margin-right: 10px;
+      &:nth-child(1)::after,
+      &:nth-child(2)::after {
+        content: "/";
+        margin-left: 10px;
+      }
+      &:nth-child(3) {
+        color: $dark1;
+      }
+    }
+  }
+
+  &-header {
+    font-family: "Forum";
+    font-weight: 400;
+    font-size: 60px;
+    color: $dark;
+    margin-bottom: 40px;
+    @include tablet {
+      font-size: 50px;
+    }
+  }
+
+  &__categorie {
+    display: flex;
+    margin-bottom: 45px;
+    @include tablet {
+      justify-content: space-between;
+    }
+    @include phone {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    &-block {
+      background-color: $background;
+      border: 2px solid $gold;
+      padding: 0 20px;
+      width: fit-content;
+      height: 48px;
+      font-family: "Jost";
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 48px;
+      color: $gold;
+      margin-right: 20px;
+      @include tablet {
+        font-size: 16px;
+        margin-right: 0;
+      }
+      @include phone {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__settings {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Jost";
+    font-weight: 400;
+    font-size: 17px;
+    color: $gray2;
+
+    &-label {
+      margin-right: 20px;
+    }
+
+    &_cost {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 244px;
+
+      &-pole {
+        background-color: $background;
+        border: 1px solid $gray2;
+        height: 40px;
+        width: 83px;
+        outline: none;
+        padding: 0 15px;
+        box-sizing: border-box;
+      }
+    }
+
+    &_filter {
+      display: none;
+      align-items: center;
+      @include tablet {
+        display: flex;
+      }
+
+      &-btn {
+        width: 27px;
+        height: 24px;
+        background-image: url(/build/img/filter.png);
+        background-size: contain;
+        margin-right: 20px;
+      }
+
+      &-label {
+        font-family: "Jost";
+        font-weight: 600;
+        font-size: 25px;
+        color: $dark;
+      }
+    }
+
+    &_type,
+    &_have,
+    &_sort {
+      display: flex;
+      align-items: center;
+    }
+
+    &_type,
+    &_cost,
+    &_have {
+      @include tablet {
+        display: none;
+      }
+    }
+
+    &_sort {
+      @include phone {
+        display: none;
+      }
+    }
+
+    &-select {
+      width: 186px;
+      height: 50px;
+      background-color: $card;
+      font-weight: 600;
+      line-height: 50px;
+      padding-left: 20px;
+      box-sizing: border-box;
+      color: $dark;
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 22px;
+        left: 144px;
+        border-top: 9px solid $gold;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        z-index: 10;
+      }
+    }
+  }
+}

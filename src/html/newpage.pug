@@ -1,0 +1,17 @@
+doctype html 
+html(lang="en")
+    head 
+        title Catalog
+        link(rel="stylesheet" href="/src/styles/style.css")
+        script(defer src="https://unpkg.com/micromodal/dist/micromodal.min.js")
+        script(defer src="/src/js/micromodal.js")
+    body 
+        header
+            include include/header.pug
+            include include/modal.pug
+            include include/micromodal.pug
+        include include/mainshop.pug
+        include include/footer.pug
+        script(src="/src/js/modal.js")
+        script(src="/src/js/favorite.js")
+        

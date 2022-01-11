@@ -1,0 +1,338 @@
+@import "./vars";
+@import "./mixin";
+@import "./fonts";
+@import "./basestyles";
+
+.catalog {
+  &_header {
+    font-family: "Forum";
+    font-weight: 400;
+    font-size: 60px;
+    color: $dark;
+    text-align: center;
+    margin-bottom: 50px;
+    @include tablet {
+      text-align: left;
+    }
+    @include phone {
+      font-size: 25px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include phone {
+      justify-content: center;
+    }
+  }
+
+  &__card {
+    height: 350px;
+    position: relative;
+    background-color: $card;
+    z-index: 1;
+    margin-bottom: 20px;
+    transition: 0.5s ease;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
+      transition: 0.5s ease;
+    }
+
+    @include tablet {
+      width: 279px;
+      height: 330px;
+    }
+
+    &_name {
+      font-weight: 700;
+      font-size: 30px;
+      color: $dark;
+      font-family: "Jost";
+      margin: 40px 0 0 50px;
+      z-index: 2;
+      @include phone {
+        text-align: center;
+        margin: 15px 0 0 0;
+        width: 100%;
+      }
+    }
+
+    &_bg {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      mix-blend-mode: darken;
+    }
+
+    &:nth-child(1) {
+      width: 494px;
+      @include tablet {
+        width: 279px;
+      }
+      @include phone {
+        height: 310px;
+        width: 280px;
+      }
+    }
+    &:nth-child(1) &_name {
+      width: 279px;
+    }
+    &:nth-child(1) &_bg {
+      width: 300px;
+      @include tablet {
+        width: 279px;
+      }
+      @include phone {
+        width: 100%;
+      }
+    }
+
+    &:nth-child(2) {
+      width: 701px;
+      @include tablet {
+        width: 429px;
+      }
+      @include phone {
+        height: 270px;
+        width: 280px;
+      }
+    }
+    &:nth-child(2) &_bg {
+      right: 83px;
+      @include tablet {
+        right: 0;
+        width: 429px;
+      }
+      @include phone {
+        width: 100%;
+      }
+    }
+
+    &:nth-child(3) {
+      width: 342px;
+      @include tablet {
+        height: 330px;
+        width: 354px;
+      }
+      @include phone {
+        width: 280px;
+      }
+    }
+    &:nth-child(3) &_bg {
+      right: 42px;
+      @include tablet {
+        right: 49px;
+        width: 236px;
+      }
+      @include phone {
+        width: 87%;
+        right: 0;
+      }
+    }
+
+    &:nth-child(4) {
+      width: 494px;
+      @include tablet {
+        width: 354px;
+      }
+      @include phone {
+        height: 314px;
+        width: 280px;
+      }
+    }
+    &:nth-child(4) &_name {
+      width: 150px;
+      @include tablet {
+        width: 272px;
+      }
+    }
+    &:nth-child(4) &_bg {
+      right: 0;
+      @include tablet {
+        width: 227px;
+      }
+      @include phone {
+        width: 100%;
+      }
+    }
+
+    &:nth-child(5) {
+      width: 341px;
+      @include tablet {
+        width: 100%;
+        height: 314px;
+      }
+      @include phone {
+        height: 261px;
+        width: 280px;
+      }
+    }
+    &:nth-child(5) &_bg {
+      right: 16px;
+      @include tablet {
+        width: 363px;
+        right: 170px;
+      }
+      @include phone {
+        width: 92%;
+        right: 0;
+      }
+    }
+
+    &:nth-child(6) {
+      width: 495px;
+      @include tablet {
+        display: none;
+      }
+    }
+    &:nth-child(6) &_bg {
+      right: 27px;
+    }
+
+    &:nth-child(7) {
+      width: 341px;
+      @include tablet {
+        display: none;
+      }
+    }
+    &:nth-child(7) &_bg {
+      right: 16px;
+    }
+
+    &:nth-child(8) {
+      width: 341px;
+      @include tablet {
+        display: none;
+      }
+    }
+    &:nth-child(8) &_bg {
+      right: 15px;
+    }
+
+    &:nth-child(9) {
+      width: 340px;
+      @include tablet {
+        display: none;
+      }
+    }
+    &:nth-child(9) &_name {
+      width: 251px;
+    }
+    &:nth-child(9) &_bg {
+      right: 30px;
+    }
+
+    &:nth-child(10) {
+      width: 340px;
+      @include tablet {
+        display: none;
+      }
+    }
+    &:nth-child(10) &_bg {
+      right: 30px;
+    }
+
+    &:nth-child(11) {
+      width: 495px;
+      @include tablet {
+        display: none;
+      }
+    }
+    &:nth-child(11) &_bg {
+      right: 30px;
+    }
+  }
+
+  &__extra {
+    &_wrapper {
+      display: flex;
+      justify-content: space-between;
+      @include phone {
+        flex-direction: column;
+      }
+    }
+
+    &_card {
+      flex-grow: 1;
+      height: 470px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @include phone {
+        height: 300px;
+      }
+      &:nth-child(1) {
+        margin-right: 20px;
+        background-image: url(/build/images/extraBG1.png);
+        @include phone {
+          margin-right: 0;
+        }
+      }
+      &:nth-child(2) {
+        background-image: url(/build/images/extraBG2.png);
+        @include phone {
+          background-position-x: 29%;
+        }
+      }
+
+      &-header {
+        font-family: "Jost";
+        font-weight: 700;
+        font-size: 40px;
+        margin-top: 40px;
+        color: $white;
+        @include phone {
+          font-size: 25px;
+        }
+      }
+      &:nth-child(1) &-header {
+        margin: 50 auto;
+        text-align: center;
+        @include phone {
+          margin-left: 25px;
+          text-align: inherit;
+        }
+      }
+      &:nth-child(2) &-header {
+        margin-left: 50px;
+        width: 267px;
+        @include phone {
+          margin-left: 25px;
+        }
+      }
+
+      &-catalog {
+        font-family: "Jost";
+        font-weight: 400;
+        font-size: 20px;
+        color: $gold;
+        margin-bottom: 50px;
+      }
+      &:nth-child(1) &-btn {
+        margin: 0 auto 50px auto;
+        width: 175px;
+        transition: 0.5s ease-in-out;
+        &:hover {
+          opacity: 0.7;
+          transition: 0.5s ease-in-out;
+        }
+      }
+      &:nth-child(2) &-btn {
+        margin: 0 0 50px 50px;
+        width: 175px;
+        transition: 0.5s ease-in-out;
+        &:hover {
+          opacity: 0.7;
+          transition: 0.5s ease-in-out;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+@import "./vars";
+@import "./mixin";
+@import "./fonts";
+@import "./basestyles";
+
+.modalmenu {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 1100px;
+  background-color: $dark-gray;
+  z-index: 1000;
+  top: 80px;
+  flex-direction: column;
+  font-family: "Jost";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: $white;
+  animation-name: animateright;
+  animation-duration: 0.3s;
+  transition: 0.5s ease;
+
+  &-active {
+    display: flex;
+  }
+
+  &__one {
+    width: 100%;
+    background-color: $dark-gray;
+    display: none;
+
+    &-active {
+      display: flex !important;
+    }
+
+    &__ul-li {
+      font-size: 17px;
+      margin-bottom: 5px;
+      transition: 0.5s ease;
+      cursor: pointer;
+      &:hover {
+        color: $gold;
+        transition: 0.5s ease;
+      }
+    }
+
+    &_line {
+      background-image: url(/build/img/vertical.svg);
+      width: 6px;
+      height: 419px;
+      background-size: contain;
+    }
+  }
+
+  & a {
+    display: flex;
+    align-items: center;
+  }
+
+  &__search {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__line {
+    margin-bottom: 25px;
+  }
+
+  &__ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+
+    &-li {
+      margin-bottom: 10px;
+      transition: 0.5s ease;
+      cursor: pointer;
+
+      &:nth-child(1):after {
+        content: "";
+        position: absolute;
+        top: 37px;
+        left: 180px;
+        border-top: 9px solid $gold;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        z-index: 10;
+      }
+
+      &:hover {
+        color: $gold;
+        transition: 0.5s ease;
+      }
+    }
+  }
+}

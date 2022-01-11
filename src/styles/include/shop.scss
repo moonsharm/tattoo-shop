@@ -1,0 +1,224 @@
+@import "./vars";
+@import "./mixin";
+@import "./fonts";
+@import "./basestyles";
+
+.shop {
+  & .container {
+    position: relative;
+    & .slider__indicators {
+      top: auto;
+      bottom: -28px;
+      display: none;
+      @include tablet {
+        display: flex;
+      }
+    }
+  }
+  &__new {
+    display: block;
+  }
+  &__stock,
+  &__sale,
+  &__best {
+    display: none;
+  }
+  margin-top: 120px;
+  margin-bottom: 30px;
+  @include phone {
+    margin-top: 20px;
+  }
+  &__heads {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-family: "Jost";
+    font-size: 30px;
+    color: $dark;
+    @include tablet {
+      font-size: 19px;
+      justify-content: space-between;
+    }
+    @include phone {
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      @include phone {
+        width: 183px;
+      }
+    }
+
+    &_header {
+      cursor: pointer;
+    }
+
+    &_line {
+      display: none;
+    }
+  }
+
+  &_showMore {
+    margin: 50px auto 120px auto;
+    width: 179px;
+    @include tablet {
+      display: none;
+    }
+    @include phone {
+      width: 180px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__card-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-basis: 0;
+    height: 448px;
+    align-items: center;
+    @include tablet {
+      margin-top: 0;
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+    @include phone {
+      margin-top: 0;
+      justify-content: center;
+    }
+  }
+}
+
+.card {
+  width: 290px;
+  height: 384px;
+  background-color: $card;
+  font-family: "Jost";
+  font-weight: 400;
+  box-sizing: border-box;
+  padding-top: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s ease;
+  @include tablet {
+    width: 229px;
+    height: 395px;
+
+    &-buy {
+      display: block !important;
+    }
+    &:nth-child(4) {
+      display: none;
+    }
+  }
+  @include phone {
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4) {
+      display: none;
+    }
+  }
+
+  &:hover &-buy {
+    display: block;
+  }
+  &:hover {
+    height: 448px;
+    z-index: 2;
+    transition: 0.2s ease;
+    @include tablet {
+      height: 395px;
+    }
+  }
+
+  &__container {
+    width: 230px;
+    margin: 0 auto;
+  }
+
+  &__top_special {
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    box-sizing: border-box;
+    line-height: 30px;
+    font-style: 15px;
+
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 3;
+    &-new {
+      background-image: url(/build/img/bordernew.svg);
+      width: 85px;
+      color: $gold;
+    }
+    &-best {
+      background-image: url(/build/img/borderbest.svg);
+      width: 108px;
+      color: $best;
+    }
+    &-stock {
+      background-image: url(/build/img/borderstock.svg);
+      width: 85px;
+      color: $stock;
+    }
+    &-no {
+      background-image: url(/build/img/borderno.svg);
+      width: 125px;
+      color: $no;
+    }
+    &-sale {
+      background-image: url(/build/img/bordersale.svg);
+      width: 85px;
+      color: $sale;
+    }
+  }
+  &__top_like {
+    background-image: url(/build/img/like-card.png);
+    background-size: contain;
+    width: 20px;
+    height: 18px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  &-image {
+    width: 100%;
+    height: 228px;
+    margin-bottom: 22px;
+  }
+
+  &-name {
+    font-size: 17px;
+    color: $dark;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    width: 240px;
+    overflow: hidden;
+    @include tablet {
+      width: 194px;
+      height: 53px;
+    }
+  }
+  &-price {
+    font-weight: 700;
+    font-size: 24px;
+    color: $gold;
+    margin-left: 30px;
+  }
+  &-buy {
+    margin-left: 28px;
+    display: none;
+  }
+}

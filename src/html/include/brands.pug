@@ -1,0 +1,21 @@
+mixin card(...items)
+    .brand-slider_row 
+        each item in items
+            a(href="#")
+                img(src="/build/images/brand"+item+".png").brand-slider__item-img
+
+.brand 
+    .container 
+        h2.brand-header Популярные бренды
+        .brand-stay 
+            .brand-slider__item 
+                +card("1","2","3")
+                +card("1","2","3")
+        .brand-slider
+            .brand-slider__item 
+                +card("1","2","3","4","5")
+                +card("1","2","3","4","5")
+            .brand-slider__item 
+                +card("1","2","3","4","5")
+                +card("6","7","8","9","10")
+            

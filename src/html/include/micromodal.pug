@@ -1,0 +1,10 @@
+#modal-1.modal.micromodal-slide(aria-hidden='true')
+    .modal__overlay(tabindex='-1' data-micromodal-close='')
+        .modal__container(role='dialog' aria-modal='true' aria-labelledby='modal-1-title')
+            header.modal__header
+                button.modal__close(aria-label='Close modal' data-micromodal-close='')
+            h2#modal-1-title.modal__title Личный кабинет
+            form.modal__auth
+                span.modal__text Введите номер
+                input(type="text" placeholder="7 XXX XXX XX").modal__inp
+                input(type="button" value="Получить код в SMS").modal__btn 

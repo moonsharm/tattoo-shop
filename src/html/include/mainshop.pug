@@ -1,0 +1,79 @@
+mixin card (name,cost,url,special)
+    .card 
+        if special == 'new'
+            .card__top_special.card__top_special-new Новинка
+        else if special == 'best'
+            .card__top_special.card__top_special-best Хит продаж
+        else if special == 'stock'
+            .card__top_special.card__top_special-stock Акция
+        else if special == 'no'
+            .card__top_special.card__top_special-no Нет на складе
+        else if special == 'sale'
+            .card__top_special.card__top_special-sale Скидка
+        .card__top_like
+        img(src=""+url alt="card").card-image
+        .card-name=name
+        .card-price=cost
+        .card-buy
+            .blockFigure.blockFigure-card
+                .blockFigure_rect1.blockFigure-card_rect1
+                a(href="#")
+                    .blockFigure_block.blockFigure-card_block Добавить в корзину
+                .blockFigure_rect2.blockFigure-card_rect2
+
+.mainshop
+    .container  
+        ul.mainshop__nav 
+            li.mainshop__nav-li Главная
+            li.mainshop__nav-li Каталог
+            li.mainshop__nav-li Тату машинки
+        h2.mainshop-header Тату машинки
+        .mainshop__categorie 
+            a(href="#")
+                .mainshop__categorie-block Для начинающих
+            a(href="#")
+                .mainshop__categorie-block От билдеров
+            a(href="#")
+                .mainshop__categorie-block Для профессионалов
+            a(href="#")
+                .mainshop__categorie-block Расходники
+        .mainshop__settings 
+            .mainshop__settings_filter
+                .mainshop__settings_filter-btn 
+                .mainshop__settings_filter-label Фильтр
+            form(action="#").mainshop__settings_cost
+                span.mainshop__settings-label Цена
+                input(type="text").mainshop__settings_cost-pole
+                input(type="text").mainshop__settings_cost-pole
+            .mainshop__settings_type 
+                span.mainshop__settings-label Тип машинки
+                .mainshop__settings-select Роторная
+            .mainshop__settings_have 
+                span.mainshop__settings-label Только в наличии
+                label(for="").switch
+                    input(type="checkbox")
+                    span.switcher
+            .mainshop__settings_sort  
+                span.mainshop__settings-label Сортировка
+                .mainshop__settings-select Популярные
+        .shop__card-box 
+            +card('Foxxx Viper Fox Golden Vintage Lot #1 RCA','8 730 ₽','/build/images/card1.png','new')
+            +card('Foxxx Kitsune Mini Black Vintage RCA','6 000 ₽','/build/images/card2.png','best')
+            +card('Нитровиниловые перчатки Wally Plastic S','20 ₽','/build/images/card3.png','stock')
+            +card('Forever Cartridge Grip Ergo 30 mm Огненно-Рыжий','2 037 ₽','/build/images/card4.png','no')
+        .shop__card-box 
+            +card('Cyborg Machines Alter Rotary Axis Cross Sexy Nymph','2 730 ₽','/build/images/card5.png','sale')
+            +card('Deuce Machines Direct Drive #7 RCA Samurai','8 000 ₽','/build/images/card6.png','new')
+            +card('Verge Direct 2.1 Gunmetal','11 000 ₽','/build/images/card7.png','new')
+            +card('Verge Direct 2.1 Pink gip EGO 4 mm liners','10 937 ₽','/build/images/card8.png','new')
+        .shop__card-box 
+            +card('Foxxx Viper Fox Golden Vintage Lot #1 RCA','8 730 ₽','/build/images/card1.png')
+            +card('Foxxx Kitsune Mini Black Vintage RCA','6 000 ₽','/build/images/card2.png')
+            +card('Нитровиниловые перчатки Wally Plastic S','20 ₽','/build/images/card3.png')
+            +card('Forever Cartridge Grip Ergo 30 mm Огненно-Рыжий','2 037 ₽','/build/images/card4.png')
+        .shop_showMore 
+            .blockFigure.blockFigure-card
+                .blockFigure_rect1.blockFigure-card_rect1
+                a(href="#")
+                    .blockFigure_block.blockFigure-card_block(style="height:70px !important;line-height:70px !important") Показать еще
+                .blockFigure_rect2.blockFigure-card_rect2

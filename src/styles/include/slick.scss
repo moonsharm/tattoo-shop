@@ -1,0 +1,41 @@
+@import "./vars";
+@import "./mixin";
+@import "./fonts";
+@import "./basestyles";
+
+.slick {
+  &-list {
+    overflow: hidden;
+  }
+  &-track {
+    display: flex;
+  }
+  &-arrow {
+    position: absolute;
+    top: 80px;
+    z-index: 10;
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    &:hover {
+      opacity: 0.7;
+      transition: 0.3s ease;
+    }
+    &.slick-prev {
+      left: -80px;
+      background-image: url(/build/img/brand-left.png);
+      @include forSwiper {
+        left: -60px;
+      }
+    }
+    &.slick-next {
+      right: -80px;
+      background-image: url(/build/img/brand-right.png);
+      @include forSwiper {
+        right: -60px;
+      }
+    }
+  }
+}

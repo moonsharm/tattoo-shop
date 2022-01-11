@@ -1,0 +1,76 @@
+mixin small-line 
+    .line-wrapper 
+        .square-left 
+        .line-s 
+        .square-right
+
+.catalog 
+    .container
+        h2.catalog_header Каталог
+        .catalog__wrapper 
+            .catalog__card
+                h5.catalog__card_name Тату наборы
+                a(href="#").catalog__card_href
+                    img(src="/build/images/catalog1.png" alt="card").catalog__card_bg
+            .catalog__card
+                h5.catalog__card_name Держатели
+                a(href="#").catalog__card_href
+                    img(src="/build/images/catalog2.png" alt="card").catalog__card_bg
+            .catalog__card
+                h5.catalog__card_name Тату машинки
+                a(href="#").catalog__card_href
+                    img(src="/build/images/catalog3.png" alt="card").catalog__card_bg
+            .catalog__card
+                h5.catalog__card_name Педали и провода
+                a(href="#").catalog__card_href
+                    img(src="/build/images/catalog4.png" alt="card").catalog__card_bg
+            .catalog__card
+                h5.catalog__card_name Краски
+                a(href="#").catalog__card_href
+                    img(src="/build/images/catalog5.png" alt="card").catalog__card_bg
+            .catalog__card
+                h5.catalog__card_name Блоки питания
+                a(href="#").catalog__card_href
+                    img(src="/build/images/catalog6.png" alt="card").catalog__card_bg
+            .catalog__card
+                h5.catalog__card_name Наконечники
+                a(href="#").catalog__card_href
+                    img(src="/build/images/catalog7.png" alt="card").catalog__card_bg
+            .catalog__card
+                h5.catalog__card_name Тату иглы
+                a(href="#").catalog__card_href
+                    img(src="/build/images/catalog8.png" alt="card").catalog__card_bg
+            .catalog__card
+                h5.catalog__card_name Защита, ёмкости, расходники
+                a(href="#").catalog__card_href
+                    img(src="/build/images/catalog9.png" alt="card").catalog__card_bg
+            .catalog__card
+                h5.catalog__card_name Аксессуары
+                a(href="#").catalog__card_href
+                    img(src="/build/images/catalog10.png" alt="card").catalog__card_bg
+            .catalog__card
+                h5.catalog__card_name Принтеры и планшеты
+                a(href="#").catalog__card_href
+                    img(src="/build/images/catalog11.png" alt="card").catalog__card_bg
+                
+        .shop_showMore.disp
+            .blockFigure.blockFigure-card
+                .blockFigure_rect1.blockFigure-card_rect1
+                a(href="#")
+                    .blockFigure_block.blockFigure-card_block(style="height:70px !important;line-height:70px !important") Смотреть в каталоге
+                .blockFigure_rect2.blockFigure-card_rect2
+    .catalog__extra_wrapper 
+        .catalog__extra_card 
+            h4.catalog__extra_card-header Краски Lip Nitn
+            a(href="#")
+                .catalog__extra_card-btn 
+                    span.catalog__extra_card-catalog Смотреть в каталоге
+                    .catalog__extra_card-line 
+                        +small-line
+        .catalog__extra_card 
+            h4.catalog__extra_card-header Foxx viper — хит 2021 года
+            a(href="#")
+                .catalog__extra_card-btn 
+                    span.catalog__extra_card-catalog Смотреть в каталоге
+                    .catalog__extra_card-line 
+                        +small-line

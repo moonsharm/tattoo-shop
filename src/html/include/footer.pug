@@ -1,0 +1,100 @@
+mixin small-line 
+    .line-wrapper 
+        .square-left 
+        .line-s 
+        .square-right
+mixin big-line 
+    .line-wrapper 
+        .triangle.triangle-left 
+        .line-b
+        .triangle.triangle-right
+
+.footer
+    .footer__dekstop
+        .container
+            .footer_wraptop
+                .footer__block
+                    a(href="#")
+                        .header__logo.footer__logo
+                            h1.header__logo_name MR. DRISKELL
+                            .header__logo_line
+                                +small-line 
+                            h2.header__logo_about TATTOO SHOP
+                    a(href="#")
+                        p.footer__block-smalltext Политика конфиденциальности
+                .footer__block 
+                    a(href="#")
+                        p.footer__block-text Промокоды
+                    a(href="#")
+                        p.footer__block-text Скидки
+                    a(href="#")
+                        p.footer__block-text Помощь
+                .footer__block 
+                    a(href="#")
+                        p.footer__block-text О нас
+                    a(href="#")
+                        p.footer__block-text Контакты
+                    span.fake .
+            .footer__line
+            .footer__line1 
+                +big-line
+            .footer_wrapbot
+                .footer__block_right
+                    .footer__block_row 
+                        a(href="#")
+                            .footer__social_icon
+                            .footer__social_text 8 800 600-61-91
+                        .footer__icon 
+                        .footer__icon 
+                        .footer__icon 
+                    p.footer__time Время работы: с 9:00 до 20:00 по мск
+                    .header__email
+                            a(href="#")
+                                .header__email_icon 
+                                .header__email_main Mr.Driskell@mail.ru
+    .footer__tablet
+        .container
+            .footer_wraptop
+                .footer__block
+                    a(href="/src/html/index.html")
+                        .header__logo.footer__logo
+                            h1.header__logo_name MR. DRISKELL
+                            .header__logo_line
+                                +small-line 
+                            h2.header__logo_about TATTOO SHOP
+                    a(href="#")
+                        p.footer__block-smalltext Политика конфиденциальности
+                .footer__phone_block
+                    .footer__block 
+                        a(href="#")
+                            p.footer__block-text Промокоды
+                        a(href="#")
+                            p.footer__block-text Скидки
+                        a(href="#")
+                            p.footer__block-text Помощь
+                    .footer__block 
+                        a(href="#")
+                            p.footer__block-text О нас
+                        a(href="#")
+                            p.footer__block-text Контакты
+                        span.fake .
+            .footer__line
+        .footer__line1 
+            +big-line
+        .container
+            .footer_wrapbot
+                .footer__block_right
+                    .footer__block_row 
+                        a(href="#")
+                            .footer__social_icon
+                            .footer__social_text 8 800 600-61-91
+                        .footer__wrapper-icon
+                            .footer__icon 
+                            .footer__icon 
+                            .footer__icon 
+                    p.footer__time Время работы: с 9:00 до 20:00 по мск
+                    .header__email
+                            a(href="#")
+                                .header__email_icon 
+                                .header__email_main Mr.Driskell@mail.ru
+

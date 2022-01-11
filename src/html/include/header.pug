@@ -1,0 +1,66 @@
+mixin small-line 
+    .line-wrapper 
+        .square-left 
+        .line-s 
+        .square-right
+
+mixin big-line 
+    .line-wrapper 
+        .triangle.triangle-left 
+        .line-b
+        .triangle.triangle-right
+
+.header#header
+    .container
+        .header__top
+            .header__menu
+                .header__menu-text Меню
+                .header__menu-btn 
+            .header__search-tablet
+                form(action="#").search
+                    input(type="text" placeholder="Поиск").search-input
+                    input(type="submit" value="").search-btn
+            .header__contact
+                .header__social
+                    .header__social__wrapper.header__social__wrapper--hover
+                        a(href="#")
+                            .header__social_icon
+                            .header__social_main +7 952 659-03-03
+                    .header__social__wrapper
+                        span.header__social_text Viber
+                        span.header__social_text Whats App
+                        span.header__social_text Telegram
+                .header__email
+                    a(href="#")
+                        .header__email_icon 
+                        .header__email_main Mr.Driskell@mail.ru
+            a(href="/src/html/index.html")
+                .header__logo 
+                    h1.header__logo_name MR. DRISKELL
+                    .header__logo_line
+                        +small-line 
+                    h2.header__logo_about TATTOO SHOP
+            .header__user
+                a(href="#")
+                    .header__user__purchase
+                        .header__user_price 37 280 ₽
+                        .header__user_cart 
+                            .header__user_cart-icon
+                            .header__user_cart-count 17
+                a(href="#")
+                    .header__user_favourite
+                .header__user_account(data-micromodal-trigger="modal-1")
+        .header__top_line
+            +big-line 
+        .header__bot
+            .header__catalog 
+                .header__catalog-text Каталог
+                .header__catalog-btn 
+            .header__search
+                form(action="#").search
+                    input(type="text" placeholder="Поиск").search-input
+                    input(type="submit" value="").search-btn
+            each item in ['Промокоды', 'Скидки', 'Помощь','О нас','Контакты']
+                a(href="")
+                    span.header__nav_span= item
+

@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Jost";
+  src: url("/build/fonts/jost/Jost-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("/build/fonts/jost/Jost-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("/build/fonts/jost/Jost-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("/build/fonts/jost/Jost-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Forum";
+  src: url("/build/fonts/forum/Forum-Regular.ttf");
+  font-weight: 400;
+}
+/*# sourceMappingURL=fonts.css.map */

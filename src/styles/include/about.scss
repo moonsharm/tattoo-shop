@@ -1,0 +1,70 @@
+@import "./vars";
+@import "./mixin";
+@import "./fonts";
+@import "./basestyles";
+
+.about {
+  display: flex;
+  margin-bottom: 170px;
+  @include tablet {
+    flex-direction: column;
+  }
+  @include phone {
+    margin-bottom: 30px;
+  }
+
+  &-img {
+    background-image: url(/build/images/about-bg.png);
+    width: 930px;
+    height: 635px;
+    background-size: cover;
+    margin-right: 55px;
+    background-position: center;
+    @include tablet {
+      width: 100%;
+      margin-right: 0;
+    }
+    @include phone {
+      height: 268px;
+    }
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    @include tablet {
+      width: 729px;
+      margin: 20px auto 0;
+    }
+    @include phone {
+      width: 96%;
+      margin-left: 10px;
+    }
+
+    &-header {
+      font-family: "Forum";
+      font-weight: 400;
+      font-size: 50px;
+      margin-bottom: 20px;
+      color: $gold;
+      @include phone {
+        font-size: 25px;
+      }
+    }
+
+    &-text {
+      font-family: "Jost";
+      font-weight: 400;
+      font-size: 17px;
+      margin-bottom: 40px;
+      color: $dark;
+    }
+
+    &-btn {
+      @include tablet {
+        margin: 0 auto;
+      }
+    }
+  }
+}

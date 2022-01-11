@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Tatoo </title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer="defer" src="/src/js/simple-adaptive-slider.min.js"></script>
+  <script defer="defer" src="/src/js/slider.js"> </script>
+  <script defer="defer" src="/src/js/headContacts.js"></script>
+  <script defer="defer" src="/src/js/catalog.js"></script>
+  <script defer="defer" src="/src/js/smoothScroll.js"></script>
+  <script defer="defer" src="/src/js/favorite.js"></script>
+  <script defer="defer" src="/src/js/shopHeaders.js"></script>
+  <script defer="defer" src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+  <script defer="defer" src="/src/js/micromodal.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header" id="header">
+      <div class="container">
+        <div class="header__top">
+          <div class="header__menu">
+            <div class="header__menu-text">Меню</div>
+            <div class="header__menu-btn"> </div>
+          </div>
+          <div class="header__search-tablet">
+            <form class="search" action="#">
+              <input class="search-input" type="text" placeholder="Поиск" />
+              <input class="search-btn" type="submit" value="" />
+            </form>
+          </div>
+          <div class="header__contact">
+            <div class="header__social">
+              <div class="header__social__wrapper header__social__wrapper--hover"><a href="#">
+                  <div class="header__social_icon"></div>
+                  <div class="header__social_main">+7 952 659-03-03</div>
+                </a></div>
+              <div class="header__social__wrapper"><span class="header__social_text">Viber</span><span
+                  class="header__social_text">Whats App</span><span class="header__social_text">Telegram</span></div>
+            </div>
+            <div class="header__email"><a href="#">
+                <div class="header__email_icon"> </div>
+                <div class="header__email_main">Mr.Driskell@mail.ru</div>
+              </a></div>
+          </div><a href="index.html">
+            <div class="header__logo">
+              <h1 class="header__logo_name">MR. DRISKELL</h1>
+              <div class="header__logo_line">
+                <div class="line-wrapper">
+                  <div class="square-left"> </div>
+                  <div class="line-s"> </div>
+                  <div class="square-right"></div>
+                </div>
+              </div>
+              <h2 class="header__logo_about">TATTOO SHOP</h2>
+            </div>
+          </a>
+          <div class="header__user"><a href="#">
+              <div class="header__user__purchase">
+                <div class="header__user_price">37 280 ₽</div>
+                <div class="header__user_cart">
+                  <div class="header__user_cart-icon"></div>
+                  <div class="header__user_cart-count">17</div>
+                </div>
+              </div>
+            </a><a href="#">
+              <div class="header__user_favourite"></div>
+            </a>
+            <div class="header__user_account" data-micromodal-trigger="modal-1"></div>
+          </div>
+        </div>
+        <div class="header__top_line">
+          <div class="line-wrapper">
+            <div class="triangle triangle-left"> </div>
+            <div class="line-b"></div>
+            <div class="triangle triangle-right"></div>
+          </div>
+        </div>
+        <div class="header__bot">
+          <div class="header__catalog">
+            <div class="header__catalog-text">Каталог</div>
+            <div class="header__catalog-btn"> </div>
+          </div>
+          <div class="header__search">
+            <form class="search" action="#">
+              <input class="search-input" type="text" placeholder="Поиск" />
+              <input class="search-btn" type="submit" value="" />
+            </form>
+          </div><a href=""><span class="header__nav_span">Промокоды</span></a><a href=""><span
+              class="header__nav_span">Скидки</span></a><a href=""><span class="header__nav_span">Помощь</span></a><a
+            href=""><span class="header__nav_span">О нас</span></a><a href=""><span
+              class="header__nav_span">Контакты</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="modalcat">
+      <div class="modalcat_triangle"></div>
+      <div class="modalcat__heads">
+        <div class="modalcat__heads_wrapper">
+          <h4 class="modalcat__heads-h">По категории</h4>
+          <div class="modalcat__heads_line">
+            <div class="line-wrapper">
+              <div class="square-left"> </div>
+              <div class="line-s"> </div>
+              <div class="square-right"></div>
+            </div>
+          </div>
+        </div>
+        <div class="modalcat__heads_wrapper">
+          <h4 class="modalcat__heads-h">По брендам</h4>
+          <div class="modalcat__heads_line">
+            <div class="line-wrapper">
+              <div class="square-left"> </div>
+              <div class="line-s"> </div>
+              <div class="square-right"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modalcat_line">
+        <div class="line-wrapper">
+          <div class="triangle triangle-left triangle triangle-left_light"></div>
+          <div class="line-b line-b_light"></div>
+          <div class="triangle triangle-right triangle triangle-right_light"></div>
+        </div>
+      </div>
+      <div class="modalcat__content">
+        <div class="modalcat__categorie">
+          <ul class="modalcat__content_ul"> <a href="#">
+              <li class="modalcat__content_ul-li">Новинки</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li">Наборы для татуировок</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li">Тату машинки</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li">Тату краски</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li">Тату иглы</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li">Тату держатели</li>
+            </a>
+          </ul>
+          <ul class="modalcat__content_ul"> <a href="#">
+              <li class="modalcat__content_ul-li">Тату наконечники</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li">Блоки питания</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li">Педали и провода</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li">Аксессуары</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li">Принтеры и планшеты</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li">Защита, ёмкости, расходные материалы</li>
+            </a>
+          </ul>
+        </div>
+        <div class="modalcat__brand">
+          <ul class="modalcat__content_ul"> <a href="#">
+              <li class="modalcat__content_ul-li">Aliance</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li"> Aloe Tattoo</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li"> Anchored by Nikko Hurtado</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li"> BC Invention Comrany</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li"> Beauty Bit</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li"> Bishop Rotary</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li"> Burlak Tattoo Machines</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li"> Cheyenne HAWK</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li"> Critical Tattoo</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li"> Dermalize Protective</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li"> Dynamic Colors</li>
+            </a>
+          </ul>
+          <ul class="modalcat__content_ul"> <a href="#">
+              <li class="modalcat__content_ul-li">EGO Bez’s Rotary</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li"> Eikon Device Inc.</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li"> Electrum</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li"> EQUALISER by Kwadron</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li">Eternal</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li"> Excalibur</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li"> Fantasia Art Supply</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li">FKirons</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li"> Hanafy</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li"> HM Tattoo Machines</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li">Ink Machines</li>
+            </a>
+          </ul>
+          <ul class="modalcat__content_ul"> <a href="#">
+              <li class="modalcat__content_ul-li">InkJecta Tattoo Machine</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li"> Intenze</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li"> JACK &amp; ALEXX</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li"> Kashalot Rotary</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li"> Kuro Sumi</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li">KWADRON™</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li"> Lauro Paolini</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li"> Lithuanian Irons</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li"> Lucky Supply</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li"> Mercator Medical</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li">Millenium Mom’s Ink</li>
+            </a>
+          </ul>
+          <ul class="modalcat__content_ul"> <a href="#">
+              <li class="modalcat__content_ul-li">NEMESIS</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li"> Nocturnal Tattoo Ink</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li">Panthera</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li"> Perma Blend</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li"> Precision Needles</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li"> Precision Tattoo Supply</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li">Premier Products</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li"> Radiant</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li"> Reprofx® Spirit™</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li"> Right Stuuf</li>
+            </a><a href="#">
+              <li class="modalcat__content_ul-li"> S8TATTOO</li>
+            </a>
+          </ul>
+          <ul class="modalcat__content_ul"> <a href="#">
+              <li></li>
+            </a><a href="#">
+              <li></li>
+            </a><a href="#">
+              <li></li>
+            </a><a href="#">
+              <li></li>
+            </a><a href="#">
+              <li></li>
+            </a><a href="#">
+              <li></li>
+            </a><a href="#">
+              <li></li>
+            </a><a href="#">
+              <li></li>
+            </a><a href="#">
+              <li></li>
+            </a><a href="#">
+              <li></li>
+            </a><a href="#">
+              <li></li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="slider">
+      <div class="slider__wrapper">
+        <div class="slider__items">
+          <div class="slider__item">
+            <div class="container"></div>
+          </div>
+          <div class="slider__item">
+            <div class="container"></div>
+          </div>
+          <div class="slider__item">
+            <div class="container"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="slider__info">
+          <h2 class="slider__header">Лучшие товары в мире татуировок</h2>
+          <h3 class="slider__text">Оборудование и расходники для самых ярких и качественных работ</h3>
+          <div class="slider__catalog">
+            <div class="blockFigure">
+              <div class="blockFigure_rect1"> </div><a href="newpage.html">
+                <div class="blockFigure_block">Смотреть каталог</div>
+              </a>
+              <div class="blockFigure_rect2"></div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__pagination"><a class="slider__control slider__control_prev" href="#" role="button"
+            data-slide="prev"></a><a class="slider__control slider__control_next" href="#" role="button"
+            data-slide="next"></a></div>
+      </div>
+    </div>
+    <div class="modalmenu">
+      <div class="modalmenu__line">
+        <div class="line-wrapper">
+          <div class="triangle triangle-left"> </div>
+          <div class="line-b"></div>
+          <div class="triangle triangle-right"></div>
+        </div>
+      </div>
+      <ul class="modalmenu__ul">
+        <li class="modalmenu__ul-li">Каталог</li>
+        <div class="modalmenu__one">
+          <div class="modalmenu__one_line"> </div>
+          <ul class="modalmenu__ul"> <a href="#">
+              <li class="modalmenu__one__ul-li">Новинки</li>
+            </a><a href="#">
+              <li class="modalmenu__one__ul-li">Наборы для татуировок</li>
+            </a><a href="#">
+              <li class="modalmenu__one__ul-li">Тату машинки</li>
+            </a><a href="#">
+              <li class="modalmenu__one__ul-li">Тату краски</li>
+            </a><a href="#">
+              <li class="modalmenu__one__ul-li">Тату иглы</li>
+            </a><a href="#">
+              <li class="modalmenu__one__ul-li">Тату держатели</li>
+            </a><a href="#">
+              <li class="modalmenu__one__ul-li">Тату наконечники</li>
+            </a><a href="#">
+              <li class="modalmenu__one__ul-li">Блоки питания</li>
+            </a><a href="#">
+              <li class="modalmenu__one__ul-li">Педали и провода</li>
+            </a><a href="#">
+              <li class="modalmenu__one__ul-li">Аксессуары</li>
+            </a><a href="#">
+              <li class="modalmenu__one__ul-li">Принтеры и планшеты</li>
+            </a><a href="#">
+              <li class="modalmenu__one__ul-li">Защита, ёмкостиБ расходн...</li>
+            </a>
+          </ul>
+        </div><a href="#">
+          <li class="modalmenu__ul-li">Контакты</li>
+        </a><a href="#">
+          <li class="modalmenu__ul-li">Промокоды</li>
+        </a><a href="#">
+          <li class="modalmenu__ul-li">Скидки</li>
+        </a><a href="#">
+          <li class="modalmenu__ul-li">Помощь</li>
+        </a><a href="#">
+          <li class="modalmenu__ul-li">О нас</li>
+        </a><a href="#">
+          <li class="modalmenu__ul-li">Избранное</li>
+        </a><a href="#">
+          <li class="modalmenu__ul-li">Личный кабинет</li>
+        </a>
+      </ul>
+      <div class="modalmenu__search">
+        <form class="search" action="#">
+          <input class="search-input" type="text" placeholder="Поиск" />
+          <input class="search-btn" type="submit" value="" />
+        </form>
+      </div>
+      <div class="modalmenu__line">
+        <div class="line-wrapper">
+          <div class="triangle triangle-left"> </div>
+          <div class="line-b"></div>
+          <div class="triangle triangle-right"></div>
+        </div>
+      </div>
+      <div class="footer__tablet">
+        <div class="container">
+          <div class="footer_wrapbot">
+            <div class="footer__block_right">
+              <div class="footer__block_row"> <a href="#">
+                  <div class="footer__social_icon"></div>
+                  <div class="footer__social_text">8 800 600-61-91</div>
+                </a>
+                <div class="footer__wrapper-icon">
+                  <div class="footer__icon"> </div>
+                  <div class="footer__icon"> </div>
+                  <div class="footer__icon"> </div>
+                </div>
+              </div>
+              <p class="footer__time">Время работы: с 9:00 до 20:00 по мск</p>
+              <div class="header__email"><a href="#">
+                  <div class="header__email_icon"> </div>
+                  <div class="header__email_main">Mr.Driskell@mail.ru</div>
+                </a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+          <header class="modal__header">
+            <button class="modal__close" aria-label="Close modal" data-micromodal-close=""></button>
+          </header>
+          <h2 class="modal__title" id="modal-1-title">Личный кабинет</h2>
+          <form class="modal__auth"><span class="modal__text">Введите номер</span>
+            <input class="modal__inp" type="text" placeholder="7 XXX XXX XX" />
+            <input class="modal__btn" type="button" value="Получить код в SMS" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="shop">
+    <div class="container">
+      <div class="shop__heads">
+        <div class="shop__heads-wrapper"><span class="shop__heads_header">Товары со скидкой</span>
+          <div class="shop__heads_line">
+            <div class="line-wrapper">
+              <div class="square-left"> </div>
+              <div class="line-s"> </div>
+              <div class="square-right"></div>
+            </div>
+          </div>
+        </div>
+        <div class="shop__heads-wrapper"><span class="shop__heads_header">Самые популярные</span>
+          <div class="shop__heads_line">
+            <div class="line-wrapper">
+              <div class="square-left"> </div>
+              <div class="line-s"> </div>
+              <div class="square-right"></div>
+            </div>
+          </div>
+        </div>
+        <div class="shop__heads-wrapper"><span class="shop__heads_header">Новые поступления</span>
+          <div class="shop__heads_line">
+            <div class="line-wrapper">
+              <div class="square-left"> </div>
+              <div class="line-s"> </div>
+              <div class="square-right"></div>
+            </div>
+          </div>
+        </div>
+        <div class="shop__heads-wrapper"><span class="shop__heads_header">Акционные товары</span>
+          <div class="shop__heads_line">
+            <div class="line-wrapper">
+              <div class="square-left"> </div>
+              <div class="line-s"> </div>
+              <div class="square-right"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shop__new">
+        <div class="shop__card-box">
+          <div class="card">
+            <div class="card__top_special card__top_special-new">Новинка</div>
+            <div class="card__top_like"></div><img class="card-image" src="/build/images/card1.png" alt="card" />
+            <div class="card-name">Foxxx Viper Fox Golden Vintage Lot #1 RCA</div>
+            <div class="card-price">8 730 ₽</div>
+            <div class="card-buy">
+              <div class="blockFigure blockFigure-card">
+                <div class="blockFigure_rect1 blockFigure-card_rect1"></div><a href="#">
+                  <div class="blockFigure_block blockFigure-card_block">Добавить в корзину</div>
+                </a>
+                <div class="blockFigure_rect2 blockFigure-card_rect2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top_special card__top_special-new">Новинка</div>
+            <div class="card__top_like"></div><img class="card-image" src="/build/images/card2.png" alt="card" />
+            <div class="card-name">Foxxx Kitsune Mini Black Vintage RCA</div>
+            <div class="card-price">6 000 ₽</div>
+            <div class="card-buy">
+              <div class="blockFigure blockFigure-card">
+                <div class="blockFigure_rect1 blockFigure-card_rect1"></div><a href="#">
+                  <div class="blockFigure_block blockFigure-card_block">Добавить в корзину</div>
+                </a>
+                <div class="blockFigure_rect2 blockFigure-card_rect2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top_special card__top_special-new">Новинка</div>
+            <div class="card__top_like"></div><img class="card-image" src="/build/images/card3.png" alt="card" />
+            <div class="card-name">Нитровиниловые перчатки Wally Plastic S</div>
+            <div class="card-price">20 ₽</div>
+            <div class="card-buy">
+              <div class="blockFigure blockFigure-card">
+                <div class="blockFigure_rect1 blockFigure-card_rect1"></div><a href="#">
+                  <div class="blockFigure_block blockFigure-card_block">Добавить в корзину</div>
+                </a>
+                <div class="blockFigure_rect2 blockFigure-card_rect2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top_special card__top_special-new">Новинка</div>
+            <div class="card__top_like"></div><img class="card-image" src="/build/images/card4.png" alt="card" />
+            <div class="card-name">Forever Cartridge Grip Ergo 30 mm Огненно-Рыжий</div>
+            <div class="card-price">2 037 ₽</div>
+            <div class="card-buy">
+              <div class="blockFigure blockFigure-card">
+                <div class="blockFigure_rect1 blockFigure-card_rect1"></div><a href="#">
+                  <div class="blockFigure_block blockFigure-card_block">Добавить в корзину</div>
+                </a>
+                <div class="blockFigure_rect2 blockFigure-card_rect2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shop__card-box">
+          <div class="card">
+            <div class="card__top_special card__top_special-new">Новинка</div>
+            <div class="card__top_like"></div><img class="card-image" src="/build/images/card5.png" alt="card" />
+            <div class="card-name">Cyborg Machines Alter Rotary Axis Cross Sexy Nymph</div>
+            <div class="card-price">2 730 ₽</div>
+            <div class="card-buy">
+              <div class="blockFigure blockFigure-card">
+                <div class="blockFigure_rect1 blockFigure-card_rect1"></div><a href="#">
+                  <div class="blockFigure_block blockFigure-card_block">Добавить в корзину</div>
+                </a>
+                <div class="blockFigure_rect2 blockFigure-card_rect2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top_special card__top_special-new">Новинка</div>
+            <div class="card__top_like"></div><img class="card-image" src="/build/images/card6.png" alt="card" />
+            <div class="card-name">Deuce Machines Direct Drive #7 RCA Samurai</div>
+            <div class="card-price">8 000 ₽</div>
+            <div class="card-buy">
+              <div class="blockFigure blockFigure-card">
+                <div class="blockFigure_rect1 blockFigure-card_rect1"></div><a href="#">
+                  <div class="blockFigure_block blockFigure-card_block">Добавить в корзину</div>
+                </a>
+                <div class="blockFigure_rect2 blockFigure-card_rect2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top_special card__top_special-new">Новинка</div>
+            <div class="card__top_like"></div><img class="card-image" src="/build/images/card7.png" alt="card" />
+            <div class="card-name">Verge Direct 2.1 Gunmetal</div>
+            <div class="card-price">11 000 ₽</div>
+            <div class="card-buy">
+              <div class="blockFigure blockFigure-card">
+                <div class="blockFigure_rect1 blockFigure-card_rect1"></div><a href="#">
+                  <div class="blockFigure_block blockFigure-card_block">Добавить в корзину</div>
+                </a>
+                <div class="blockFigure_rect2 blockFigure-card_rect2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top_special card__top_special-new">Новинка</div>
+            <div class="card__top_like"></div><img class="card-image" src="/build/images/card8.png" alt="card" />
+            <div class="card-name">Verge Direct 2.1 Pink gip EGO 4 mm liners</div>
+            <div class="card-price">10 937 ₽</div>
+            <div class="card-buy">
+              <div class="blockFigure blockFigure-card">
+                <div class="blockFigure_rect1 blockFigure-card_rect1"></div><a href="#">
+                  <div class="blockFigure_block blockFigure-card_block">Добавить в корзину</div>
+                </a>
+                <div class="blockFigure_rect2 blockFigure-card_rect2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shop__best">
+        <div class="shop__card-box">
+          <div class="card">
+            <div class="card__top_special card__top_special-best">Хит продаж</div>
+            <div class="card__top_like"></div><img class="card-image" src="/build/images/card1.png" alt="card" />
+            <div class="card-name">Foxxx Viper Fox Golden Vintage Lot #1 RCA</div>
+            <div class="card-price">8 730 ₽</div>
+            <div class="card-buy">
+              <div class="blockFigure blockFigure-card">
+                <div class="blockFigure_rect1 blockFigure-card_rect1"></div><a href="#">
+                  <div class="blockFigure_block blockFigure-card_block">Добавить в корзину</div>
+                </a>
+                <div class="blockFigure_rect2 blockFigure-card_rect2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top_special card__top_special-best">Хит продаж</div>
+            <div class="card__top_like"></div><img class="card-image" src="/build/images/card2.png" alt="card" />
+            <div class="card-name">Foxxx Kitsune Mini Black Vintage RCA</div>
+            <div class="card-price">6 000 ₽</div>
+            <div class="card-buy">
+              <div class="blockFigure blockFigure-card">
+                <div class="blockFigure_rect1 blockFigure-card_rect1"></div><a href="#">
+                  <div class="blockFigure_block blockFigure-card_block">Добавить в корзину</div>
+                </a>
+                <div class="blockFigure_rect2 blockFigure-card_rect2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top_special card__top_special-best">Хит продаж</div>
+            <div class="card__top_like"></div><img class="card-image" src="/build/images/card3.png" alt="card" />
+            <div class="card-name">Нитровиниловые перчатки Wally Plastic S</div>
+            <div class="card-price">20 ₽</div>
+            <div class="card-buy">
+              <div class="blockFigure blockFigure-card">
+                <div class="blockFigure_rect1 blockFigure-card_rect1"></div><a href="#">
+                  <div class="blockFigure_block blockFigure-card_block">Добавить в корзину</div>
+                </a>
+                <div class="blockFigure_rect2 blockFigure-card_rect2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top_special card__top_special-best">Хит продаж</div>
+            <div class="card__top_like"></div><img class="card-image" src="/build/images/card4.png" alt="card" />
+            <div class="card-name">Forever Cartridge Grip Ergo 30 mm Огненно-Рыжий</div>
+            <div class="card-price">2 037 ₽</div>
+            <div class="card-buy">
+              <div class="blockFigure blockFigure-card">
+                <div class="blockFigure_rect1 blockFigure-card_rect1"></div><a href="#">
+                  <div class="blockFigure_block blockFigure-card_block">Добавить в корзину</div>
+                </a>
+                <div class="blockFigure_rect2 blockFigure-card_rect2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shop__card-box">
+          <div class="card">
+            <div class="card__top_special card__top_special-best">Хит продаж</div>
+            <div class="card__top_like"></div><img class="card-image" src="/build/images/card5.png" alt="card" />
+            <div class="card-name">Cyborg Machines Alter Rotary Axis Cross Sexy Nymph</div>
+            <div class="card-price">2 730 ₽</div>
+            <div class="card-buy">
+              <div class="blockFigure blockFigure-card">
+                <div class="blockFigure_rect1 blockFigure-card_rect1"></div><a href="#">
+                  <div class="blockFigure_block blockFigure-card_block">Добавить в корзину</div>
+                </a>
+                <div class="blockFigure_rect2 blockFigure-card_rect2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top_special card__top_special-best">Хит продаж</div>
+            <div class="card__top_like"></div><img class="card-image" src="/build/images/card6.png" alt="card" />
+            <div class="card-name">Deuce Machines Direct Drive #7 RCA Samurai</div>
+            <div class="card-price">8 000 ₽</div>
+            <div class="card-buy">
+              <div class="blockFigure blockFigure-card">
+                <div class="blockFigure_rect1 blockFigure-card_rect1"></div><a href="#">
+                  <div class="blockFigure_block blockFigure-card_block">Добавить в корзину</div>
+                </a>
+                <div class="blockFigure_rect2 blockFigure-card_rect2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top_special card__top_special-best">Хит продаж</div>
+            <div class="card__top_like"></div><img class="card-image" src="/build/images/card7.png" alt="card" />
+            <div class="card-name">Verge Direct 2.1 Gunmetal</div>
+            <div class="card-price">11 000 ₽</div>
+            <div class="card-buy">
+              <div class="blockFigure blockFigure-card">
+                <div class="blockFigure_rect1 blockFigure-card_rect1"></div><a href="#">
+                  <div class="blockFigure_block blockFigure-card_block">Добавить в корзину</div>
+                </a>
+                <div class="blockFigure_rect2 blockFigure-card_rect2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top_special card__top_special-best">Хит продаж</div>
+            <div class="card__top_like"></div><img class="card-image" src="/build/images/card8.png" alt="card" />
+            <div class="card-name">Verge Direct 2.1 Pink gip EGO 4 mm liners</div>
+            <div class="card-price">10 937 ₽</div>
+            <div class="card-buy">
+              <div class="blockFigure blockFigure-card">
+                <div class="blockFigure_rect1 blockFigure-card_rect1"></div><a href="#">
+                  <div class="blockFigure_block blockFigure-card_block">Добавить в корзину</div>
+                </a>
+                <div class="blockFigure_rect2 blockFigure-card_rect2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shop__sale">
+        <div class="shop__card-box">
+          <div class="card">
+            <div class="card__top_special card__top_special-sale">Скидка</div>
+            <div class="card__top_like"></div><img class="card-image" src="/build/images/card1.png" alt="card" />
+            <div class="card-name">Foxxx Viper Fox Golden Vintage Lot #1 RCA</div>
+            <div class="card-price">8 730 ₽</div>
+            <div class="card-buy">
+              <div class="blockFigure blockFigure-card">
+                <div class="blockFigure_rect1 blockFigure-card_rect1"></div><a href="#">
+                  <div class="blockFigure_block blockFigure-card_block">Добавить в корзину</div>
+                </a>
+                <div class="blockFigure_rect2 blockFigure-card_rect2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top_special card__top_special-sale">Скидка</div>
+            <div class="card__top_like"></div><img class="card-image" src="/build/images/card2.png" alt="card" />
+            <div class="card-name">Foxxx Kitsune Mini Black Vintage RCA</div>
+            <div class="card-price">6 000 ₽</div>
+            <div class="card-buy">
+              <div class="blockFigure blockFigure-card">
+                <div class="blockFigure_rect1 blockFigure-card_rect1"></div><a href="#">
+                  <div class="blockFigure_block blockFigure-card_block">Добавить в корзину</div>
+                </a>
+                <div class="blockFigure_rect2 blockFigure-card_rect2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top_special card__top_special-sale">Скидка</div>
+            <div class="card__top_like"></div><img class="card-image" src="/build/images/card3.png" alt="card" />
+            <div class="card-name">Нитровиниловые перчатки Wally Plastic S</div>
+            <div class="card-price">20 ₽</div>
+            <div class="card-buy">
+              <div class="blockFigure blockFigure-card">
+                <div class="blockFigure_rect1 blockFigure-card_rect1"></div><a href="#">
+                  <div class="blockFigure_block blockFigure-card_block">Добавить в корзину</div>
+                </a>
+                <div class="blockFigure_rect2 blockFigure-card_rect2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top_special card__top_special-sale">Скидка</div>
+            <div class="card__top_like"></div><img class="card-image" src="/build/images/card4.png" alt="card" />
+            <div class="card-name">Forever Cartridge Grip Ergo 30 mm Огненно-Рыжий</div>
+            <div class="card-price">2 037 ₽</div>
+            <div class="card-buy">
+              <div class="blockFigure blockFigure-card">
+                <div class="blockFigure_rect1 blockFigure-card_rect1"></div><a href="#">
+                  <div class="blockFigure_block blockFigure-card_block">Добавить в корзину</div>
+                </a>
+                <div class="blockFigure_rect2 blockFigure-card_rect2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shop__card-box">
+          <div class="card">
+            <div class="card__top_special card__top_special-sale">Скидка</div>
+            <div class="card__top_like"></div><img class="card-image" src="/build/images/card5.png" alt="card" />
+            <div class="card-name">Cyborg Machines Alter Rotary Axis Cross Sexy Nymph</div>
+            <div class="card-price">2 730 ₽</div>
+            <div class="card-buy">
+              <div class="blockFigure blockFigure-card">
+                <div class="blockFigure_rect1 blockFigure-card_rect1"></div><a href="#">
+                  <div class="blockFigure_block blockFigure-card_block">Добавить в корзину</div>
+                </a>
+                <div class="blockFigure_rect2 blockFigure-card_rect2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top_special card__top_special-sale">Скидка</div>
+            <div class="card__top_like"></div><img class="card-image" src="/build/images/card6.png" alt="card" />
+            <div class="card-name">Deuce Machines Direct Drive #7 RCA Samurai</div>
+            <div class="card-price">8 000 ₽</div>
+            <div class="card-buy">
+              <div class="blockFigure blockFigure-card">
+                <div class="blockFigure_rect1 blockFigure-card_rect1"></div><a href="#">
+                  <div class="blockFigure_block blockFigure-card_block">Добавить в корзину</div>
+                </a>
+                <div class="blockFigure_rect2 blockFigure-card_rect2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top_special card__top_special-sale">Скидка</div>
+            <div class="card__top_like"></div><img class="card-image" src="/build/images/card7.png" alt="card" />
+            <div class="card-name">Verge Direct 2.1 Gunmetal</div>
+            <div class="card-price">11 000 ₽</div>
+            <div class="card-buy">
+              <div class="blockFigure blockFigure-card">
+                <div class="blockFigure_rect1 blockFigure-card_rect1"></div><a href="#">
+                  <div class="blockFigure_block blockFigure-card_block">Добавить в корзину</div>
+                </a>
+                <div class="blockFigure_rect2 blockFigure-card_rect2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top_special card__top_special-sale">Скидка</div>
+            <div class="card__top_like"></div><img class="card-image" src="/build/images/card8.png" alt="card" />
+            <div class="card-name">Verge Direct 2.1 Pink gip EGO 4 mm liners</div>
+            <div class="card-price">10 937 ₽</div>
+            <div class="card-buy">
+              <div class="blockFigure blockFigure-card">
+                <div class="blockFigure_rect1 blockFigure-card_rect1"></div><a href="#">
+                  <div class="blockFigure_block blockFigure-card_block">Добавить в корзину</div>
+                </a>
+                <div class="blockFigure_rect2 blockFigure-card_rect2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shop__stock">
+        <div class="shop__card-box">
+          <div class="card">
+            <div class="card__top_special card__top_special-stock">Акция</div>
+            <div class="card__top_like"></div><img class="card-image" src="/build/images/card1.png" alt="card" />
+            <div class="card-name">Foxxx Viper Fox Golden Vintage Lot #1 RCA</div>
+            <div class="card-price">8 730 ₽</div>
+            <div class="card-buy">
+              <div class="blockFigure blockFigure-card">
+                <div class="blockFigure_rect1 blockFigure-card_rect1"></div><a href="#">
+                  <div class="blockFigure_block blockFigure-card_block">Добавить в корзину</div>
+                </a>
+                <div class="blockFigure_rect2 blockFigure-card_rect2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top_special card__top_special-stock">Акция</div>
+            <div class="card__top_like"></div><img class="card-image" src="/build/images/card2.png" alt="card" />
+            <div class="card-name">Foxxx Kitsune Mini Black Vintage RCA</div>
+            <div class="card-price">6 000 ₽</div>
+            <div class="card-buy">
+              <div class="blockFigure blockFigure-card">
+                <div class="blockFigure_rect1 blockFigure-card_rect1"></div><a href="#">
+                  <div class="blockFigure_block blockFigure-card_block">Добавить в корзину</div>
+                </a>
+                <div class="blockFigure_rect2 blockFigure-card_rect2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top_special card__top_special-stock">Акция</div>
+            <div class="card__top_like"></div><img class="card-image" src="/build/images/card3.png" alt="card" />
+            <div class="card-name">Нитровиниловые перчатки Wally Plastic S</div>
+            <div class="card-price">20 ₽</div>
+            <div class="card-buy">
+              <div class="blockFigure blockFigure-card">
+                <div class="blockFigure_rect1 blockFigure-card_rect1"></div><a href="#">
+                  <div class="blockFigure_block blockFigure-card_block">Добавить в корзину</div>
+                </a>
+                <div class="blockFigure_rect2 blockFigure-card_rect2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top_special card__top_special-stock">Акция</div>
+            <div class="card__top_like"></div><img class="card-image" src="/build/images/card4.png" alt="card" />
+            <div class="card-name">Forever Cartridge Grip Ergo 30 mm Огненно-Рыжий</div>
+            <div class="card-price">2 037 ₽</div>
+            <div class="card-buy">
+              <div class="blockFigure blockFigure-card">
+                <div class="blockFigure_rect1 blockFigure-card_rect1"></div><a href="#">
+                  <div class="blockFigure_block blockFigure-card_block">Добавить в корзину</div>
+                </a>
+                <div class="blockFigure_rect2 blockFigure-card_rect2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="shop__card-box">
+          <div class="card">
+            <div class="card__top_special card__top_special-stock">Акция</div>
+            <div class="card__top_like"></div><img class="card-image" src="/build/images/card5.png" alt="card" />
+            <div class="card-name">Cyborg Machines Alter Rotary Axis Cross Sexy Nymph</div>
+            <div class="card-price">2 730 ₽</div>
+            <div class="card-buy">
+              <div class="blockFigure blockFigure-card">
+                <div class="blockFigure_rect1 blockFigure-card_rect1"></div><a href="#">
+                  <div class="blockFigure_block blockFigure-card_block">Добавить в корзину</div>
+                </a>
+                <div class="blockFigure_rect2 blockFigure-card_rect2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top_special card__top_special-stock">Акция</div>
+            <div class="card__top_like"></div><img class="card-image" src="/build/images/card6.png" alt="card" />
+            <div class="card-name">Deuce Machines Direct Drive #7 RCA Samurai</div>
+            <div class="card-price">8 000 ₽</div>
+            <div class="card-buy">
+              <div class="blockFigure blockFigure-card">
+                <div class="blockFigure_rect1 blockFigure-card_rect1"></div><a href="#">
+                  <div class="blockFigure_block blockFigure-card_block">Добавить в корзину</div>
+                </a>
+                <div class="blockFigure_rect2 blockFigure-card_rect2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top_special card__top_special-stock">Акция</div>
+            <div class="card__top_like"></div><img class="card-image" src="/build/images/card7.png" alt="card" />
+            <div class="card-name">Verge Direct 2.1 Gunmetal</div>
+            <div class="card-price">11 000 ₽</div>
+            <div class="card-buy">
+              <div class="blockFigure blockFigure-card">
+                <div class="blockFigure_rect1 blockFigure-card_rect1"></div><a href="#">
+                  <div class="blockFigure_block blockFigure-card_block">Добавить в корзину</div>
+                </a>
+                <div class="blockFigure_rect2 blockFigure-card_rect2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top_special card__top_special-stock">Акция</div>
+            <div class="card__top_like"></div><img class="card-image" src="/build/images/card8.png" alt="card" />
+            <div class="card-name">Verge Direct 2.1 Pink gip EGO 4 mm liners</div>
+            <div class="card-price">10 937 ₽</div>
+            <div class="card-buy">
+              <div class="blockFigure blockFigure-card">
+                <div class="blockFigure_rect1 blockFigure-card_rect1"></div><a href="#">
+                  <div class="blockFigure_block blockFigure-card_block">Добавить в корзину</div>
+                </a>
+                <div class="blockFigure_rect2 blockFigure-card_rect2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shop_showMore">
+        <div class="blockFigure blockFigure-card">
+          <div class="blockFigure_rect1 blockFigure-card_rect1"></div><a href="#">
+            <div class="blockFigure_block blockFigure-card_block"
+              style="height:70px !important;line-height:70px !important">Показать еще</div>
+          </a>
+          <div class="blockFigure_rect2 blockFigure-card_rect2"></div>
+        </div>
+      </div>
+      <ol class="slider__indicators">
+        <li class="slider__indicator"></li>
+        <li class="slider__indicator"></li>
+        <li class="slider__indicator slider__indicator_active"></li>
+        <li class="slider__indicator"></li>
+        <li class="slider__indicator"></li>
+      </ol>
+    </div>
+  </div>
+  <div class="catalog">
+    <div class="container">
+      <h2 class="catalog_header">Каталог</h2>
+      <div class="catalog__wrapper">
+        <div class="catalog__card">
+          <h5 class="catalog__card_name">Тату наборы</h5><a class="catalog__card_href" href="#"><img
+              class="catalog__card_bg" src="/build/images/catalog1.png" alt="card" /></a>
+        </div>
+        <div class="catalog__card">
+          <h5 class="catalog__card_name">Держатели</h5><a class="catalog__card_href" href="#"><img
+              class="catalog__card_bg" src="/build/images/catalog2.png" alt="card" /></a>
+        </div>
+        <div class="catalog__card">
+          <h5 class="catalog__card_name">Тату машинки</h5><a class="catalog__card_href" href="#"><img
+              class="catalog__card_bg" src="/build/images/catalog3.png" alt="card" /></a>
+        </div>
+        <div class="catalog__card">
+          <h5 class="catalog__card_name">Педали и провода</h5><a class="catalog__card_href" href="#"><img
+              class="catalog__card_bg" src="/build/images/catalog4.png" alt="card" /></a>
+        </div>
+        <div class="catalog__card">
+          <h5 class="catalog__card_name">Краски</h5><a class="catalog__card_href" href="#"><img class="catalog__card_bg"
+              src="/build/images/catalog5.png" alt="card" /></a>
+        </div>
+        <div class="catalog__card">
+          <h5 class="catalog__card_name">Блоки питания</h5><a class="catalog__card_href" href="#"><img
+              class="catalog__card_bg" src="/build/images/catalog6.png" alt="card" /></a>
+        </div>
+        <div class="catalog__card">
+          <h5 class="catalog__card_name">Наконечники</h5><a class="catalog__card_href" href="#"><img
+              class="catalog__card_bg" src="/build/images/catalog7.png" alt="card" /></a>
+        </div>
+        <div class="catalog__card">
+          <h5 class="catalog__card_name">Тату иглы</h5><a class="catalog__card_href" href="#"><img
+              class="catalog__card_bg" src="/build/images/catalog8.png" alt="card" /></a>
+        </div>
+        <div class="catalog__card">
+          <h5 class="catalog__card_name">Защита, ёмкости, расходники</h5><a class="catalog__card_href" href="#"><img
+              class="catalog__card_bg" src="/build/images/catalog9.png" alt="card" /></a>
+        </div>
+        <div class="catalog__card">
+          <h5 class="catalog__card_name">Аксессуары</h5><a class="catalog__card_href" href="#"><img
+              class="catalog__card_bg" src="/build/images/catalog10.png" alt="card" /></a>
+        </div>
+        <div class="catalog__card">
+          <h5 class="catalog__card_name">Принтеры и планшеты</h5><a class="catalog__card_href" href="#"><img
+              class="catalog__card_bg" src="/build/images/catalog11.png" alt="card" /></a>
+        </div>
+      </div>
+      <div class="shop_showMore disp">
+        <div class="blockFigure blockFigure-card">
+          <div class="blockFigure_rect1 blockFigure-card_rect1"></div><a href="#">
+            <div class="blockFigure_block blockFigure-card_block"
+              style="height:70px !important;line-height:70px !important">Смотреть в каталоге</div>
+          </a>
+          <div class="blockFigure_rect2 blockFigure-card_rect2"></div>
+        </div>
+      </div>
+    </div>
+    <div class="catalog__extra_wrapper">
+      <div class="catalog__extra_card">
+        <h4 class="catalog__extra_card-header">Краски Lip Nitn</h4><a href="#">
+          <div class="catalog__extra_card-btn"> <span class="catalog__extra_card-catalog">Смотреть в каталоге</span>
+            <div class="catalog__extra_card-line">
+              <div class="line-wrapper">
+                <div class="square-left"> </div>
+                <div class="line-s"> </div>
+                <div class="square-right"></div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="catalog__extra_card">
+        <h4 class="catalog__extra_card-header">Foxx viper — хит 2021 года</h4><a href="#">
+          <div class="catalog__extra_card-btn"> <span class="catalog__extra_card-catalog">Смотреть в каталоге</span>
+            <div class="catalog__extra_card-line">
+              <div class="line-wrapper">
+                <div class="square-left"> </div>
+                <div class="line-s"> </div>
+                <div class="square-right"></div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="brand">
+    <div class="container">
+      <h2 class="brand-header">Популярные бренды</h2>
+      <div class="brand-stay">
+        <div class="brand-slider__item">
+          <div class="brand-slider_row"> <a href="#"><img class="brand-slider__item-img"
+                src="/build/images/brand1.png" /></a><a href="#"><img class="brand-slider__item-img"
+                src="/build/images/brand2.png" /></a><a href="#"><img class="brand-slider__item-img"
+                src="/build/images/brand3.png" /></a>
+          </div>
+          <div class="brand-slider_row"> <a href="#"><img class="brand-slider__item-img"
+                src="/build/images/brand1.png" /></a><a href="#"><img class="brand-slider__item-img"
+                src="/build/images/brand2.png" /></a><a href="#"><img class="brand-slider__item-img"
+                src="/build/images/brand3.png" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="brand-slider">
+        <div class="brand-slider__item">
+          <div class="brand-slider_row"> <a href="#"><img class="brand-slider__item-img"
+                src="/build/images/brand1.png" /></a><a href="#"><img class="brand-slider__item-img"
+                src="/build/images/brand2.png" /></a><a href="#"><img class="brand-slider__item-img"
+                src="/build/images/brand3.png" /></a><a href="#"><img class="brand-slider__item-img"
+                src="/build/images/brand4.png" /></a><a href="#"><img class="brand-slider__item-img"
+                src="/build/images/brand5.png" /></a>
+          </div>
+          <div class="brand-slider_row"> <a href="#"><img class="brand-slider__item-img"
+                src="/build/images/brand1.png" /></a><a href="#"><img class="brand-slider__item-img"
+                src="/build/images/brand2.png" /></a><a href="#"><img class="brand-slider__item-img"
+                src="/build/images/brand3.png" /></a><a href="#"><img class="brand-slider__item-img"
+                src="/build/images/brand4.png" /></a><a href="#"><img class="brand-slider__item-img"
+                src="/build/images/brand5.png" /></a>
+          </div>
+        </div>
+        <div class="brand-slider__item">
+          <div class="brand-slider_row"> <a href="#"><img class="brand-slider__item-img"
+                src="/build/images/brand1.png" /></a><a href="#"><img class="brand-slider__item-img"
+                src="/build/images/brand2.png" /></a><a href="#"><img class="brand-slider__item-img"
+                src="/build/images/brand3.png" /></a><a href="#"><img class="brand-slider__item-img"
+                src="/build/images/brand4.png" /></a><a href="#"><img class="brand-slider__item-img"
+                src="/build/images/brand5.png" /></a>
+          </div>
+          <div class="brand-slider_row"> <a href="#"><img class="brand-slider__item-img"
+                src="/build/images/brand6.png" /></a><a href="#"><img class="brand-slider__item-img"
+                src="/build/images/brand7.png" /></a><a href="#"><img class="brand-slider__item-img"
+                src="/build/images/brand8.png" /></a><a href="#"><img class="brand-slider__item-img"
+                src="/build/images/brand9.png" /></a><a href="#"><img class="brand-slider__item-img"
+                src="/build/images/brand10.png" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="about">
+    <div class="about-img"> </div>
+    <div class="about__section">
+      <h2 class="about__section-header">Тату магазин Mr. Driskell</h2><span class="about__section-text">Приветствуем
+        вас в Tattoo Mall — в нашем тату магазине собираются энтузиасты индустрии, профессиональные мастера и новички,
+        которые только делают первые шаги в тату искусстве. Мы знаем, насколько важно грамотно и точно подобрать
+        инструменты для продуктивных тату сеансов, и помогаем быстро найти то, что поможет их сделать именно такими.
+        <br><br> В нашем ассортименте не просто тату оборудование, это буквально целая команда из грамотных
+        и действительно эффективных помощников на вашем рабочем столе. Пройдя этап долгих разработок и бесчисленных
+        тестов под пристальным взглядом отечественных машиностроителей, космецевтов и брендов с мировым именем,
+        эти товары нарабатывали опыт и каждый день становились лучше, чтобы показать, на что они способны, и помочь
+        раскрыть ваш потенциал.</span>
+      <div class="about__section-btn">
+        <div class="blockFigure blockFigure-card">
+          <div class="blockFigure_rect1 blockFigure-card_rect1"></div><a href="#">
+            <div class="blockFigure_block blockFigure-card_block"
+              style="height:70px !important;line-height:70px !important">О компании</div>
+          </a>
+          <div class="blockFigure_rect2 blockFigure-card_rect2"> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sub">
+    <div class="sub__wrapper">
+      <div class="sub-header">Узнавайте первыми</div>
+      <div class="sub-text">Подпишитесь на новостную рассылку с самыми интересными новостями и акциями</div>
+      <form class="sub-form" action="#">
+        <div class="sub-area-wrapper">
+          <div class="sub__area">
+            <p class="sub__area-p">Эл. почта</p>
+            <input class="sub__area-input" type="email" placeholder="Figur@mail.ru" />
+          </div>
+          <div class="sub__area">
+            <p class="sub__area-p">Имя</p>
+            <input class="sub__area-input" type="email" placeholder="Введите имя" />
+          </div>
+        </div>
+        <div class="sub-btn">
+          <div class="blockFigure">
+            <div class="blockFigure_rect1"> </div><a href="#">
+              <div class="blockFigure_block">Подписаться</div>
+            </a>
+            <div class="blockFigure_rect2"></div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="sub__up"><a href="#header" onclick="ScrollUp();return!1;">
+        <div class="sub__up_block"> <span class="sub__up_block-text">Вернуться вверх</span>
+          <div class="sub__up_block-btn"></div>
+        </div>
+      </a></div>
+  </div>
+  <div class="footer">
+    <div class="footer__dekstop">
+      <div class="container">
+        <div class="footer_wraptop">
+          <div class="footer__block"><a href="#">
+              <div class="header__logo footer__logo">
+                <h1 class="header__logo_name">MR. DRISKELL</h1>
+                <div class="header__logo_line">
+                  <div class="line-wrapper">
+                    <div class="square-left"> </div>
+                    <div class="line-s"> </div>
+                    <div class="square-right"></div>
+                  </div>
+                </div>
+                <h2 class="header__logo_about">TATTOO SHOP</h2>
+              </div>
+            </a><a href="#">
+              <p class="footer__block-smalltext">Политика конфиденциальности</p>
+            </a></div>
+          <div class="footer__block"> <a href="#">
+              <p class="footer__block-text">Промокоды</p>
+            </a><a href="#">
+              <p class="footer__block-text">Скидки</p>
+            </a><a href="#">
+              <p class="footer__block-text">Помощь</p>
+            </a></div>
+          <div class="footer__block"> <a href="#">
+              <p class="footer__block-text">О нас</p>
+            </a><a href="#">
+              <p class="footer__block-text">Контакты</p>
+            </a><span class="fake">.</span></div>
+        </div>
+        <div class="footer__line"></div>
+        <div class="footer__line1">
+          <div class="line-wrapper">
+            <div class="triangle triangle-left"> </div>
+            <div class="line-b"></div>
+            <div class="triangle triangle-right"></div>
+          </div>
+        </div>
+        <div class="footer_wrapbot">
+          <div class="footer__block_right">
+            <div class="footer__block_row"> <a href="#">
+                <div class="footer__social_icon"></div>
+                <div class="footer__social_text">8 800 600-61-91</div>
+              </a>
+              <div class="footer__icon"> </div>
+              <div class="footer__icon"> </div>
+              <div class="footer__icon"> </div>
+            </div>
+            <p class="footer__time">Время работы: с 9:00 до 20:00 по мск</p>
+            <div class="header__email"><a href="#">
+                <div class="header__email_icon"> </div>
+                <div class="header__email_main">Mr.Driskell@mail.ru</div>
+              </a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__tablet">
+      <div class="container">
+        <div class="footer_wraptop">
+          <div class="footer__block"><a href="/src/html/index.html">
+              <div class="header__logo footer__logo">
+                <h1 class="header__logo_name">MR. DRISKELL</h1>
+                <div class="header__logo_line">
+                  <div class="line-wrapper">
+                    <div class="square-left"> </div>
+                    <div class="line-s"> </div>
+                    <div class="square-right"></div>
+                  </div>
+                </div>
+                <h2 class="header__logo_about">TATTOO SHOP</h2>
+              </div>
+            </a><a href="#">
+              <p class="footer__block-smalltext">Политика конфиденциальности</p>
+            </a></div>
+          <div class="footer__phone_block">
+            <div class="footer__block"> <a href="#">
+                <p class="footer__block-text">Промокоды</p>
+              </a><a href="#">
+                <p class="footer__block-text">Скидки</p>
+              </a><a href="#">
+                <p class="footer__block-text">Помощь</p>
+              </a></div>
+            <div class="footer__block"> <a href="#">
+                <p class="footer__block-text">О нас</p>
+              </a><a href="#">
+                <p class="footer__block-text">Контакты</p>
+              </a><span class="fake">.</span></div>
+          </div>
+        </div>
+        <div class="footer__line"></div>
+      </div>
+      <div class="footer__line1">
+        <div class="line-wrapper">
+          <div class="triangle triangle-left"> </div>
+          <div class="line-b"></div>
+          <div class="triangle triangle-right"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer_wrapbot">
+          <div class="footer__block_right">
+            <div class="footer__block_row"> <a href="#">
+                <div class="footer__social_icon"></div>
+                <div class="footer__social_text">8 800 600-61-91</div>
+              </a>
+              <div class="footer__wrapper-icon">
+                <div class="footer__icon"> </div>
+                <div class="footer__icon"> </div>
+                <div class="footer__icon"> </div>
+              </div>
+            </div>
+            <p class="footer__time">Время работы: с 9:00 до 20:00 по мск</p>
+            <div class="header__email"><a href="#">
+                <div class="header__email_icon"> </div>
+                <div class="header__email_main">Mr.Driskell@mail.ru</div>
+              </a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/src/js/slick.min.js"></script>
+  <script src="/src/js/slick.js"> </script>
+  <script src="/src/js/modal.js"> </script>
+</body>
+
+</html>

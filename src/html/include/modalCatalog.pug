@@ -1,0 +1,59 @@
+mixin small-line 
+    .line-wrapper 
+        .square-left 
+        .line-s 
+        .square-right
+
+mixin big-line 
+    .line-wrapper 
+        .triangle.triangle-left.triangle.triangle-left_light
+        .line-b.line-b_light
+        .triangle.triangle-right.triangle.triangle-right_light
+
+
+
+.modalcat
+    .modalcat_triangle
+    .modalcat__heads 
+        .modalcat__heads_wrapper
+            h4.modalcat__heads-h По категории
+            .modalcat__heads_line
+                +small-line
+        .modalcat__heads_wrapper
+            h4.modalcat__heads-h По брендам
+            .modalcat__heads_line
+                +small-line
+    .modalcat_line                   
+        +big-line
+    .modalcat__content
+        .modalcat__categorie 
+            ul.modalcat__content_ul 
+                each li in ['Новинки','Наборы для татуировок','Тату машинки','Тату краски','Тату иглы','Тату держатели']
+                    a(href="#")
+                        li.modalcat__content_ul-li=li
+            ul.modalcat__content_ul 
+                each li in ['Тату наконечники','Блоки питания','Педали и провода','Аксессуары','Принтеры и планшеты','Защита, ёмкости, расходные материалы']
+                    a(href="#")
+                        li.modalcat__content_ul-li=li  
+        .modalcat__brand   
+            ul.modalcat__content_ul 
+                each li in ['Aliance',' Aloe Tattoo',' Anchored by Nikko Hurtado',' BC Invention Comrany',' Beauty Bit',' Bishop Rotary',' Burlak Tattoo Machines',' Cheyenne HAWK',' Critical Tattoo',' Dermalize Protective',' Dynamic Colors']
+                    a(href="#")
+                        li.modalcat__content_ul-li=li
+            ul.modalcat__content_ul 
+                each li in ['EGO Bez’s Rotary',' Eikon Device Inc.',' Electrum',' EQUALISER by Kwadron','Eternal',' Excalibur',' Fantasia Art Supply','FKirons',' Hanafy',' HM Tattoo Machines','Ink Machines']
+                    a(href="#")
+                        li.modalcat__content_ul-li=li
+            ul.modalcat__content_ul 
+                each li in ['InkJecta Tattoo Machine','  Intenze',' JACK & ALEXX','  Kashalot Rotary',' Kuro Sumi','KWADRON™',' Lauro Paolini',' Lithuanian Irons',' Lucky Supply',' Mercator Medical','Millenium Mom’s Ink']
+                    a(href="#")
+                        li.modalcat__content_ul-li=li
+            ul.modalcat__content_ul 
+                each li in ['NEMESIS',' Nocturnal Tattoo Ink','Panthera',' Perma Blend',' Precision Needles',' Precision Tattoo Supply','Premier Products',' Radiant',' Reprofx® Spirit™',' Right Stuuf',' S8TATTOO']
+                    a(href="#")
+                        li.modalcat__content_ul-li=li
+            ul.modalcat__content_ul 
+                each li in ['Skinductor',' Starbrite',' Tattoorevive','TURANIUM Fabrika Rotary',' UNI–CART','Vlad Blad',' World Famous Bala',' World Famous Tattoo Ink ',' 2K2BT',' БРОВИ','КРАСКА Tattoo Ink']
+                    a(href="#")
+                        li
+            

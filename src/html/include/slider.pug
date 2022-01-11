@@ -1,0 +1,24 @@
+mixin slider
+    .slider__item
+        .container
+
+.slider
+    .slider__wrapper
+        .slider__items
+            +slider
+            +slider 
+            +slider
+    .container 
+        .slider__info
+            h2.slider__header Лучшие товары в мире татуировок
+            h3.slider__text Оборудование и расходники для самых ярких и качественных работ
+            .slider__catalog
+                .blockFigure
+                    .blockFigure_rect1 
+                    a(href="/src/html/newpage.html")
+                        .blockFigure_block Смотреть каталог
+                    .blockFigure_rect2
+        .slider__pagination
+            a(href="#" role="button" data-slide="prev").slider__control.slider__control_prev
+            a(href="#" role="button" data-slide="next").slider__control.slider__control_next
+        
