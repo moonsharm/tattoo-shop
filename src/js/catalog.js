@@ -12,7 +12,6 @@ function ready() {
   let left = catalog.getBoundingClientRect().left + window.pageXOffset;
   modal.style.left = `${left}px`;
 
-  modal.style.display = "none";
   catalog.onclick = function () {
     if (modal.style.display == "none") {
       btn.style.backgroundImage = "url(/build/img/close.png)";
